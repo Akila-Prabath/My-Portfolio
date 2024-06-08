@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PortFolio Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background:url(portfolio.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.topnav{
+	overflow: hidden;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.topnav a{
+	float:right;
+	display: block;
+	color: #dcdcdc;
+	text-align: center;
+	padding: 20px 26px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Georgia, serif;
+}
+.topnav a:hover{
+	color:dodgerblue;
+}
+.contents{
+	display: flex;
+	flex-wrap: wrap;
+}
+.work{
+	flex: 100%;
+	border: 2px solid black;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	padding: 30px;
+	margin: 100px 30px;
+}
+#column{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.col1{
+	color:white;
+	height:550px;
+	background-color: transparent;
+	padding:0;
+}
+.col2{
+	color:white;
+	height:100px;
+	background-color: transparent;
+	padding: 0;
+}
+#h{
+	font-family:'Verdana',sans-serif;
+	font-size: 23px;
+	font-weight:bold;
+}
+.c::marker{
+	content:'»';
+	color:dodgerblue;
+	font-size: 30px;
+	padding-top:10px
+}
+.e1{
+	font-family:'Verdana',sans-serif;
+	font-size:20px; 
+	font-weight:bold;
+	color:dodgerblue;
+	padding-left: 10px;
+}
+.y1{
+	border: none;
+	background-color: rgba(128,128,128,0.2);
+	padding: 10px 18px;
+	margin-left: 20px;
+	margin-right:490px;
+	font-family:'Cambria',serif;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+}
+#para1{
+	text-align:left;
+	text-indent: 50px;
+	font-family: 'Cambria',serif;
+	font-size: 18px;
+	padding-right: 80px;
+	padding-left: 20px;
+}
+#link1{
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+	padding-left: 20px;
+}
+#link1:before{
+	content:'\27AF';
+	font-size: 20px;
+	color:white;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+	<a href="#" style="float:left; padding-left:60px; font-size:25px; font-weight:bold">PortFolio</a>
+	<a href="contact.html" style="padding-right:100px">Contact</a>
+	<a href="work.html">Work</a>
+	<a href="about.html">About</a>
+	<a href="portfolio.html">Home</a>
+</div>
+
+<div class="contents">
+<div class="work" id="work">
+	<div id="column">
+		<div class="col1">
+			<p id="h">EDUCATION</p>
+			<ul class="a">
+				<li class="c"><span class="e1">Bachelor of Software Engineering</span></li><br>
+					<div class="y1">2023 - Present</div><br>
+					<p id="para1">I am currently pursuing a Software Engineering degree in University of Sri Jayawardhanapura after my advance level studies.</p>
+				<li class="c"><span class="e1">GCE Advanced Level</span></li><br>
+					<div class="y1">2018 - 2020</div><br>
+					<p id="para1">I did my Advance Level studies in physical science stream at Maliyadeva Models Collage in Kurunegala.</p>
+						
+			</ul>
+		</div>
+		
+		<div class="col2">
+			<p id="h">EXPERIENCE</p>
+			<ul class="a">
+				<li class="c"><span class="e1">Web Designer</span></li><br>
+					<div class="y1">2018 - 2019</div><br>
+					<p id="para1">I created a simple website using Wordpress. This website is about the amazing things of nature.
+						To visit the website use the following link.</p>
+						<p id="para2"><a id="link1" href="https://amazingnaturelk.wordpress.com/" target="_blank"> Amazing Nature</a></p>
+						
+				<li class="c"><span class="e1">Blog Designer</span></li><br>
+					<div class="y1">2017 - 2018</div><br>
+					<p id="para1">I created my first bolg site using Blogger and  This bolg site about the beautiful natural things in the nature.
+						To visit the blog site use the following link.</p>
+						<p id="para2"><a id="link1" href="https://amazingnatureslk.blogspot.com/" target="_blank"> Amazing Nature</a></p>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
