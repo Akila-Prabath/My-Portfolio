@@ -13,7 +13,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background:url(portfolio.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100%;
 }
 .topnav{
@@ -41,7 +41,7 @@ body {
 	flex-wrap: wrap;
 }
 .contact{
-	flex: 100%;
+	width: 100%;
 	border: none;
 	background-color: rgba(0,0,0,0.7);
 	color: white;
@@ -77,19 +77,21 @@ li{
 }
 .email{
 	border: none;
+	width:43%;
 	background-color: rgba(128,128,128,0.2);
 	padding: 20px;
 	margin-left: 40px;
-	padding-right:170px;
+	padding-right:0px;
 	font-family:'Verdana',sans-serif;
 	color: rgb(128,128,128);
 }
 .call{
 	border: none;
+	width:43%;
 	background-color: rgba(128,128,128,0.2);
 	padding: 20px;
-	margin-left: 40px;
-	padding-right: 310px;
+	margin-left: 50px;
+	padding-right: 10px;
 	font-family:'Verdana',sans-serif;
 	color: rgb(128,128,128);
 }
@@ -99,15 +101,15 @@ li{
 	color:white;
 }
 .detail{
-	flex: 100%;
+	width: 90%;
 	border: none;
 	background-color: rgba(128,128,128,0.2);
 	color: white;
-	padding: 30px;
-	margin: 130px 80px 100px 40px;
+	padding: 30px 0px 30px 30px;
+	margin: 130px 0px 100px 40px;
 }
 input[type=text]{
-	width: 550px;
+	width: 45%;
 	padding: 10px;
 	border: none;;
 	color: white;
@@ -116,12 +118,12 @@ input[type=text]{
 	margin: 20px;
 }
 #subject{
-	width:1140px;
+	width:93.5%;
 }
 #message{
 	margin-top: 20px;
 	margin-left: 20px;
-	width:1140px;
+	width:93.5%;
 	height:150px;
 	background-color:rgba(128,128,128,0.3);
 	color:white;
@@ -138,7 +140,7 @@ input[type=submit]{
 	border-radius: 5px;
 	cursor: pointer;
 	margin-top:30px;
-	margin-left: 500px;
+	margin-left: 42%;
 	font-size: 15px;
 }
 </style>
